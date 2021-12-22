@@ -1,3 +1,22 @@
-h1 {
-  color: aqua;
+.bg {
+  background: red;
+}
+.weather-app {
+  box-sizing: none;
+  width: 700px;
+  padding: 65px;
+  border-radius: 4%;
+  margin: 100px auto;
+  background: rgb(152, 184, 211);
+}
+.nospecial {
+  text-decoration: none;
+  list-style: none;
+}
+.weather-icon {
+  height: 80px;
+  width: 80px;
+}
+.temp-dec {
+  font-size: 40px;
 }
