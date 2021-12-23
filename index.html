@@ -11,6 +11,7 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
       <div class="container">
         <div class="weather-app">
           <h1>San Diego</h1>
-          <ul class="nospecial">
+          <ul class="nospecial align-left-dec">
             <li>Wednesday</li>
             <li>05:00 PM</li>
             <li>Clear</li>
@@ -26,7 +27,7 @@
           <div class="row">
             <div class="col-6">
               <img
-                class="weather-icon"
+                class="weather-icon-dec"
                 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
                 alt="Sunny"
               />
@@ -34,19 +35,20 @@
             </div>
             <div class="col-6">
               <ul class="nospecial">
-                <li>Humidity: 50%</li>
-                <li>Wind: 3 km/h</li>
+                <li class="specific-dec">Humidity: 50%</li>
+                <li class="specific-dec">Wind: 3 km/h</li>
               </ul>
             </div>
           </div>
         </div>
-        <small
-          ><a
+        <div class="credits no-special-dec">
+          <a
+            class="link-style"
             href="https://github.com/lildweeb/daenomi-weatherapp"
             target="_blank"
             >Open source code</a
-          >, by Daenomi</small
-        >
+          >, by Daenomi
+        </div>
       </div>
       <script src="src/app.js"></script>
     </div>
