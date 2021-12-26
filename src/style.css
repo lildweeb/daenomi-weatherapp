@@ -21,8 +21,6 @@
   list-style: none;
 }
 .weather-icon-dec {
-  height: 80px;
-  width: 80px;
   display: inline;
 }
 .temp-dec {
@@ -53,4 +51,17 @@
 }
 li {
   text-transform: capitalize;
+}
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+.forecast-date {
+  opacity: 0.8;
+  font-weight: bolder;
+}
+.max-dec {
+  font-weight: bolder;
+  opacity: 0.8;
 }
