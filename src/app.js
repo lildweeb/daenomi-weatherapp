@@ -45,19 +45,19 @@ function displayTemperature(response) {
   );
 }
 
-function search(event) {
+function search(city) {
+  let apiKey = "c6ce8d51b8f185a66119a5dd74f32320";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(displayTemperature);
+}
+
+function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
   console.log(cityInputElement.value);
 }
 
-let apiKey = "c6ce8d51b8f185a66119a5dd74f32320";
-let city = "San Diego";
-
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-
-console.log(apiUrl);
-axios.get(apiUrl).then(displayTemperature);
-
 let form = document.querySelector("#search-form");
-form.addEventListener("submit", search);
+form.addEventListener("submit", handleSubmit);
+
+search("San Diego");
