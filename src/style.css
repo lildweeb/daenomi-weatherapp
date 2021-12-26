@@ -32,10 +32,10 @@
 }
 .credits {
   font-size: 11px;
+  color: rgb(7, 139, 248);
   position: relative;
-  right: -700px;
-  top: -90px;
-  color: rgb(152, 184, 211);
+  top: 40px;
+  left: 440px;
 }
 .align-left-dec {
   position: relative;
