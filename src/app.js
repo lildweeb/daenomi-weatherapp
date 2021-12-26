@@ -23,6 +23,22 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes} ${ampm}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = ` <div class="row">
+              <div class="col-2">
+                <div class="forecast-date">Thursday</div>
+                <img
+                  src="https://openweathermap.org/img/wn/04n@2x.png"
+                  width="55px"
+                />
+                <span class="max-dec">18°</span>
+                <span class="min-dec">12°</span>
+              </div>
+            </div>
+          </div>`;
+}
+
 function displayTemperature(response) {
   console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
@@ -61,3 +77,4 @@ let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
 search("San Diego");
+displayForecast();
